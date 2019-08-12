@@ -1,25 +1,17 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 ##################################################
 # AUTHOR = Michael Vincent
 # www.VinsWorld.com
+# Monday August 12, 2019 06:09:06 PM Eastern Daylight Time
 ##################################################
-
-use vars qw($VERSION);
-
-$VERSION = "1.05 - 21 JUL 2015";
 
 use strict;
 use warnings;
+
+my $VERSION = "1.05";
+
 use Getopt::Long qw(:config no_ignore_case);    #bundling
 use Pod::Usage;
-
-##################################################
-# Start Additional USE
-##################################################
-
-##################################################
-# End Additional USE
-##################################################
 
 my ( %opt, %opts );
 my ( $opt_help, $opt_man, $opt_versions );
@@ -338,11 +330,7 @@ for my $i ( 0 .. $numStreams - 1 ) {
 exit 0;
 
 ##################################################
-# End Program
-##################################################
-
-##################################################
-# Begin Subroutines
+# Start Subs
 ##################################################
 sub yyyymmddhhmmss {
     my @time = localtime();
@@ -359,15 +347,7 @@ sub yyyymmddhhmmss {
     );
 }
 
-##################################################
-# End Program
-##################################################
-
 __END__
-
-##################################################
-# Start POD
-##################################################
 
 =head1 NAME
 
